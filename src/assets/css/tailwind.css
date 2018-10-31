@@ -11,43 +11,60 @@
  */
 @tailwind preflight;
 
-.testing {
-    @apply .bg-green;
+.nav-font {
+    text-decoration: none;
+    @apply .text-white .tracking-normal .text-sm .mr-6;
 }
 
-/**
- * This injects any component classes registered by plugins.
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/components";
- */
-@tailwind components;
+.nav-font:hover {
+    text-decoration: none;
+    @apply .text-black;
+}
 
-/**
- * Here you would add any of your custom component classes; stuff that you'd
- * want loaded *before* the utilities so that the utilities could still
- * override them.
- *
- * Example:
- *
- * .btn { ... }
- * .form-input { ... }
- *
- * Or if using a preprocessor or `postcss-import`:
- *
- * @import "components/buttons";
- * @import "components/forms";
- */
 
-/**
- * This injects all of Tailwind's utility classes, generated based on your
- * config file.
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/utilities";
- */
+
+a {
+    @apply .text-teal-laravel
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+        /**
+         * This injects any component classes registered by plugins.
+         *
+         * If using `postcss-import`, use this import instead:
+         *
+         * @import "tailwindcss/components";
+         */
+    @tailwind components;
+
+    /**
+     * Here you would add any of your custom component classes; stuff that you'd
+     * want loaded *before* the utilities so that the utilities could still
+     * override them.
+     *
+     * Example:
+     *
+     * .btn { ... }
+     * .form-input { ... }
+     *
+     * Or if using a preprocessor or `postcss-import`:
+     *
+     * @import "components/buttons";
+     * @import "components/forms";
+     */
+
+    /**
+     * This injects all of Tailwind's utility classes, generated based on your
+     * config file.
+     *
+     * If using `postcss-import`, use this import instead:
+     *
+     * @import "tailwindcss/utilities";
+     */
 @tailwind utilities;
 
 /**

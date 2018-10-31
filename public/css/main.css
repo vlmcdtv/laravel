@@ -617,17 +617,34 @@ table {
   border-collapse: collapse;
 }
 
-.testing {
-  background-color: #38c172;
+.nav-font {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 0;
+  font-size: .875rem;
+  margin-right: 1.5rem;
+}
+
+.nav-font:hover {
+  text-decoration: none;
+  color: #22292f;
+}
+
+a {
+  color: #18bc9c;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /**
- * This injects any component classes registered by plugins.
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/components";
- */
+         * This injects any component classes registered by plugins.
+         *
+         * If using `postcss-import`, use this import instead:
+         *
+         * @import "tailwindcss/components";
+         */
 
 .container {
   width: 100%;
@@ -658,29 +675,29 @@ table {
 }
 
 /**
- * Here you would add any of your custom component classes; stuff that you'd
- * want loaded *before* the utilities so that the utilities could still
- * override them.
- *
- * Example:
- *
- * .btn { ... }
- * .form-input { ... }
- *
- * Or if using a preprocessor or `postcss-import`:
- *
- * @import "components/buttons";
- * @import "components/forms";
- */
+     * Here you would add any of your custom component classes; stuff that you'd
+     * want loaded *before* the utilities so that the utilities could still
+     * override them.
+     *
+     * Example:
+     *
+     * .btn { ... }
+     * .form-input { ... }
+     *
+     * Or if using a preprocessor or `postcss-import`:
+     *
+     * @import "components/buttons";
+     * @import "components/forms";
+     */
 
 /**
- * This injects all of Tailwind's utility classes, generated based on your
- * config file.
- *
- * If using `postcss-import`, use this import instead:
- *
- * @import "tailwindcss/utilities";
- */
+     * This injects all of Tailwind's utility classes, generated based on your
+     * config file.
+     *
+     * If using `postcss-import`, use this import instead:
+     *
+     * @import "tailwindcss/utilities";
+     */
 
 .list-reset {
   list-style: none;
@@ -881,6 +898,10 @@ table {
 
 .bg-teal-lightest {
   background-color: #e8fffe;
+}
+
+.bg-teal-laravel {
+  background-color: #18bc9c;
 }
 
 .bg-blue-darkest {
@@ -1175,6 +1196,10 @@ table {
   background-color: #e8fffe;
 }
 
+.hover\:bg-teal-laravel:hover {
+  background-color: #18bc9c;
+}
+
 .hover\:bg-blue-darkest:hover {
   background-color: #12283a;
 }
@@ -1465,6 +1490,10 @@ table {
 
 .focus\:bg-teal-lightest:focus {
   background-color: #e8fffe;
+}
+
+.focus\:bg-teal-laravel:focus {
+  background-color: #18bc9c;
 }
 
 .focus\:bg-blue-darkest:focus {
@@ -1831,6 +1860,10 @@ table {
   border-color: #e8fffe;
 }
 
+.border-teal-laravel {
+  border-color: #18bc9c;
+}
+
 .border-blue-darkest {
   border-color: #12283a;
 }
@@ -2123,6 +2156,10 @@ table {
   border-color: #e8fffe;
 }
 
+.hover\:border-teal-laravel:hover {
+  border-color: #18bc9c;
+}
+
 .hover\:border-blue-darkest:hover {
   border-color: #12283a;
 }
@@ -2413,6 +2450,10 @@ table {
 
 .focus\:border-teal-lightest:focus {
   border-color: #e8fffe;
+}
+
+.focus\:border-teal-laravel:focus {
+  border-color: #18bc9c;
 }
 
 .focus\:border-blue-darkest:focus {
@@ -3062,7 +3103,7 @@ table {
 }
 
 .font-sans {
-  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Lato, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .font-serif {
@@ -5169,6 +5210,10 @@ table {
   color: #e8fffe;
 }
 
+.text-teal-laravel {
+  color: #18bc9c;
+}
+
 .text-blue-darkest {
   color: #12283a;
 }
@@ -5461,6 +5506,10 @@ table {
   color: #e8fffe;
 }
 
+.hover\:text-teal-laravel:hover {
+  color: #18bc9c;
+}
+
 .hover\:text-blue-darkest:hover {
   color: #12283a;
 }
@@ -5751,6 +5800,10 @@ table {
 
 .focus\:text-teal-lightest:focus {
   color: #e8fffe;
+}
+
+.focus\:text-teal-laravel:focus {
+  color: #18bc9c;
 }
 
 .focus\:text-blue-darkest:focus {
@@ -6486,6 +6539,10 @@ table {
     background-color: #e8fffe;
   }
 
+  .sm\:bg-teal-laravel {
+    background-color: #18bc9c;
+  }
+
   .sm\:bg-blue-darkest {
     background-color: #12283a;
   }
@@ -6778,6 +6835,10 @@ table {
     background-color: #e8fffe;
   }
 
+  .sm\:hover\:bg-teal-laravel:hover {
+    background-color: #18bc9c;
+  }
+
   .sm\:hover\:bg-blue-darkest:hover {
     background-color: #12283a;
   }
@@ -7068,6 +7129,10 @@ table {
 
   .sm\:focus\:bg-teal-lightest:focus {
     background-color: #e8fffe;
+  }
+
+  .sm\:focus\:bg-teal-laravel:focus {
+    background-color: #18bc9c;
   }
 
   .sm\:focus\:bg-blue-darkest:focus {
@@ -7426,6 +7491,10 @@ table {
     border-color: #e8fffe;
   }
 
+  .sm\:border-teal-laravel {
+    border-color: #18bc9c;
+  }
+
   .sm\:border-blue-darkest {
     border-color: #12283a;
   }
@@ -7718,6 +7787,10 @@ table {
     border-color: #e8fffe;
   }
 
+  .sm\:hover\:border-teal-laravel:hover {
+    border-color: #18bc9c;
+  }
+
   .sm\:hover\:border-blue-darkest:hover {
     border-color: #12283a;
   }
@@ -8008,6 +8081,10 @@ table {
 
   .sm\:focus\:border-teal-lightest:focus {
     border-color: #e8fffe;
+  }
+
+  .sm\:focus\:border-teal-laravel:focus {
+    border-color: #18bc9c;
   }
 
   .sm\:focus\:border-blue-darkest:focus {
@@ -8657,7 +8734,7 @@ table {
   }
 
   .sm\:font-sans {
-    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Lato, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .sm\:font-serif {
@@ -10748,6 +10825,10 @@ table {
     color: #e8fffe;
   }
 
+  .sm\:text-teal-laravel {
+    color: #18bc9c;
+  }
+
   .sm\:text-blue-darkest {
     color: #12283a;
   }
@@ -11040,6 +11121,10 @@ table {
     color: #e8fffe;
   }
 
+  .sm\:hover\:text-teal-laravel:hover {
+    color: #18bc9c;
+  }
+
   .sm\:hover\:text-blue-darkest:hover {
     color: #12283a;
   }
@@ -11330,6 +11415,10 @@ table {
 
   .sm\:focus\:text-teal-lightest:focus {
     color: #e8fffe;
+  }
+
+  .sm\:focus\:text-teal-laravel:focus {
+    color: #18bc9c;
   }
 
   .sm\:focus\:text-blue-darkest:focus {
@@ -12051,6 +12140,10 @@ table {
     background-color: #e8fffe;
   }
 
+  .md\:bg-teal-laravel {
+    background-color: #18bc9c;
+  }
+
   .md\:bg-blue-darkest {
     background-color: #12283a;
   }
@@ -12343,6 +12436,10 @@ table {
     background-color: #e8fffe;
   }
 
+  .md\:hover\:bg-teal-laravel:hover {
+    background-color: #18bc9c;
+  }
+
   .md\:hover\:bg-blue-darkest:hover {
     background-color: #12283a;
   }
@@ -12633,6 +12730,10 @@ table {
 
   .md\:focus\:bg-teal-lightest:focus {
     background-color: #e8fffe;
+  }
+
+  .md\:focus\:bg-teal-laravel:focus {
+    background-color: #18bc9c;
   }
 
   .md\:focus\:bg-blue-darkest:focus {
@@ -12991,6 +13092,10 @@ table {
     border-color: #e8fffe;
   }
 
+  .md\:border-teal-laravel {
+    border-color: #18bc9c;
+  }
+
   .md\:border-blue-darkest {
     border-color: #12283a;
   }
@@ -13283,6 +13388,10 @@ table {
     border-color: #e8fffe;
   }
 
+  .md\:hover\:border-teal-laravel:hover {
+    border-color: #18bc9c;
+  }
+
   .md\:hover\:border-blue-darkest:hover {
     border-color: #12283a;
   }
@@ -13573,6 +13682,10 @@ table {
 
   .md\:focus\:border-teal-lightest:focus {
     border-color: #e8fffe;
+  }
+
+  .md\:focus\:border-teal-laravel:focus {
+    border-color: #18bc9c;
   }
 
   .md\:focus\:border-blue-darkest:focus {
@@ -14222,7 +14335,7 @@ table {
   }
 
   .md\:font-sans {
-    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Lato, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .md\:font-serif {
@@ -16313,6 +16426,10 @@ table {
     color: #e8fffe;
   }
 
+  .md\:text-teal-laravel {
+    color: #18bc9c;
+  }
+
   .md\:text-blue-darkest {
     color: #12283a;
   }
@@ -16605,6 +16722,10 @@ table {
     color: #e8fffe;
   }
 
+  .md\:hover\:text-teal-laravel:hover {
+    color: #18bc9c;
+  }
+
   .md\:hover\:text-blue-darkest:hover {
     color: #12283a;
   }
@@ -16895,6 +17016,10 @@ table {
 
   .md\:focus\:text-teal-lightest:focus {
     color: #e8fffe;
+  }
+
+  .md\:focus\:text-teal-laravel:focus {
+    color: #18bc9c;
   }
 
   .md\:focus\:text-blue-darkest:focus {
@@ -17616,6 +17741,10 @@ table {
     background-color: #e8fffe;
   }
 
+  .lg\:bg-teal-laravel {
+    background-color: #18bc9c;
+  }
+
   .lg\:bg-blue-darkest {
     background-color: #12283a;
   }
@@ -17908,6 +18037,10 @@ table {
     background-color: #e8fffe;
   }
 
+  .lg\:hover\:bg-teal-laravel:hover {
+    background-color: #18bc9c;
+  }
+
   .lg\:hover\:bg-blue-darkest:hover {
     background-color: #12283a;
   }
@@ -18198,6 +18331,10 @@ table {
 
   .lg\:focus\:bg-teal-lightest:focus {
     background-color: #e8fffe;
+  }
+
+  .lg\:focus\:bg-teal-laravel:focus {
+    background-color: #18bc9c;
   }
 
   .lg\:focus\:bg-blue-darkest:focus {
@@ -18556,6 +18693,10 @@ table {
     border-color: #e8fffe;
   }
 
+  .lg\:border-teal-laravel {
+    border-color: #18bc9c;
+  }
+
   .lg\:border-blue-darkest {
     border-color: #12283a;
   }
@@ -18848,6 +18989,10 @@ table {
     border-color: #e8fffe;
   }
 
+  .lg\:hover\:border-teal-laravel:hover {
+    border-color: #18bc9c;
+  }
+
   .lg\:hover\:border-blue-darkest:hover {
     border-color: #12283a;
   }
@@ -19138,6 +19283,10 @@ table {
 
   .lg\:focus\:border-teal-lightest:focus {
     border-color: #e8fffe;
+  }
+
+  .lg\:focus\:border-teal-laravel:focus {
+    border-color: #18bc9c;
   }
 
   .lg\:focus\:border-blue-darkest:focus {
@@ -19787,7 +19936,7 @@ table {
   }
 
   .lg\:font-sans {
-    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Lato, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .lg\:font-serif {
@@ -21878,6 +22027,10 @@ table {
     color: #e8fffe;
   }
 
+  .lg\:text-teal-laravel {
+    color: #18bc9c;
+  }
+
   .lg\:text-blue-darkest {
     color: #12283a;
   }
@@ -22170,6 +22323,10 @@ table {
     color: #e8fffe;
   }
 
+  .lg\:hover\:text-teal-laravel:hover {
+    color: #18bc9c;
+  }
+
   .lg\:hover\:text-blue-darkest:hover {
     color: #12283a;
   }
@@ -22460,6 +22617,10 @@ table {
 
   .lg\:focus\:text-teal-lightest:focus {
     color: #e8fffe;
+  }
+
+  .lg\:focus\:text-teal-laravel:focus {
+    color: #18bc9c;
   }
 
   .lg\:focus\:text-blue-darkest:focus {
@@ -23181,6 +23342,10 @@ table {
     background-color: #e8fffe;
   }
 
+  .xl\:bg-teal-laravel {
+    background-color: #18bc9c;
+  }
+
   .xl\:bg-blue-darkest {
     background-color: #12283a;
   }
@@ -23473,6 +23638,10 @@ table {
     background-color: #e8fffe;
   }
 
+  .xl\:hover\:bg-teal-laravel:hover {
+    background-color: #18bc9c;
+  }
+
   .xl\:hover\:bg-blue-darkest:hover {
     background-color: #12283a;
   }
@@ -23763,6 +23932,10 @@ table {
 
   .xl\:focus\:bg-teal-lightest:focus {
     background-color: #e8fffe;
+  }
+
+  .xl\:focus\:bg-teal-laravel:focus {
+    background-color: #18bc9c;
   }
 
   .xl\:focus\:bg-blue-darkest:focus {
@@ -24121,6 +24294,10 @@ table {
     border-color: #e8fffe;
   }
 
+  .xl\:border-teal-laravel {
+    border-color: #18bc9c;
+  }
+
   .xl\:border-blue-darkest {
     border-color: #12283a;
   }
@@ -24413,6 +24590,10 @@ table {
     border-color: #e8fffe;
   }
 
+  .xl\:hover\:border-teal-laravel:hover {
+    border-color: #18bc9c;
+  }
+
   .xl\:hover\:border-blue-darkest:hover {
     border-color: #12283a;
   }
@@ -24703,6 +24884,10 @@ table {
 
   .xl\:focus\:border-teal-lightest:focus {
     border-color: #e8fffe;
+  }
+
+  .xl\:focus\:border-teal-laravel:focus {
+    border-color: #18bc9c;
   }
 
   .xl\:focus\:border-blue-darkest:focus {
@@ -25352,7 +25537,7 @@ table {
   }
 
   .xl\:font-sans {
-    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Lato, system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .xl\:font-serif {
@@ -27443,6 +27628,10 @@ table {
     color: #e8fffe;
   }
 
+  .xl\:text-teal-laravel {
+    color: #18bc9c;
+  }
+
   .xl\:text-blue-darkest {
     color: #12283a;
   }
@@ -27735,6 +27924,10 @@ table {
     color: #e8fffe;
   }
 
+  .xl\:hover\:text-teal-laravel:hover {
+    color: #18bc9c;
+  }
+
   .xl\:hover\:text-blue-darkest:hover {
     color: #12283a;
   }
@@ -28025,6 +28218,10 @@ table {
 
   .xl\:focus\:text-teal-lightest:focus {
     color: #e8fffe;
+  }
+
+  .xl\:focus\:text-teal-laravel:focus {
+    color: #18bc9c;
   }
 
   .xl\:focus\:text-blue-darkest:focus {

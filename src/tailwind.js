@@ -96,6 +96,7 @@ let colors = {
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
   'teal-laravel': '#18BC9C',
+  'teal-laravel-darker': '#15A589',
 
   'blue-darkest': '#12283a',
   'blue-darker': '#1c3d5a',

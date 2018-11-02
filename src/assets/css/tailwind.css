@@ -11,9 +11,9 @@
  */
 @tailwind preflight;
 
-.nav-font {
+.nav-font, .fa {
     text-decoration: none;
-    @apply .text-white .tracking-normal .text-sm .mr-6;
+    @apply .text-white .tracking-normal .text-sm;
 }
 
 .nav-font:hover {

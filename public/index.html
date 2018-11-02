@@ -1,44 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <link rel="stylesheet" href="<%= BASE_URL %>css/main.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="<%= BASE_URL %>css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <title>Forum | Laravel.io</title>
-  </head>
-  <body class="bg-white font-sans">
-    <noscript>
-      <strong>We're sorry but playground doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
+</head>
+<body class="bg-white font-sans">
+<noscript>
+    <strong>We're sorry but playground doesn't work properly without JavaScript enabled. Please enable it to
+        continue.</strong>
+</noscript>
 
-<header>
-  <div class="bg-teal-laravel">
-    <div class="container mx-auto flex items-center px-2 py-5">
-        <nav class="w-1/2">
-            <a href="#" class="nav-font text-xl">Laravel.io</a>
-            <a href="#" class="nav-font bg-teal-laravel-darker p-5 pt-6">Forum</a>
-            <a href="#" class="nav-font">Pastebin</a>
-            <a href="#" class="nav-font">Chat <i class="text-white fas fa-caret-down"></i></a>
-            <a href="#" class="nav-font">Events</a>
-            <a href="#" class="nav-font">Community <i class=" text-white fas fa-caret-down"></i></a>
-        </nav>
+
+<div class="bg-teal-laravel">
+    <div class="container mx-auto md:flex">
+        <div class="w-1/2">
+            <ul class="md:flex list-reset">
+                <li class="pt-5 pr-5 pb-5"><a href="#" class="nav-font text-lg">Laravel.io</a></li>
+                <li class="bg-teal-laravel-darker p-5"><a href="#" class="nav-font hover:text-white">Forum</a></li>
+                <li class="p-5"><a href="#" class="nav-font">Pastebin</a></li>
+                <li class="p-5"><a href="#" class="nav-font">Chat <i class="fas fa-caret-down"></i></a></li>
+                <li class="p-5"><a href="#" class="nav-font">Events</a></li>
+                <li class="p-5"><a href="#" class="nav-font">Community <i class="fas fa-caret-down"></i></a></li>
+            </ul>
+        </div>
+        <div class="w-1/2">
+            <ul class="md:flex list-reset justify-end">
+                <li class="p-5"><a href="#" class="nav-font">Login</a></li>
+                <li class="p-5"><a href="#" class="nav-font">Register</a></li>
+            </ul>
+        </div>
+
     </div>
+</div>
+
+<!--nav bar end-->
+
+<div class="container bg-white mx-auto">
+
+    <div class="py-2 border-solid border-b-2 border-grey-lighter mb-6">
+        <div class="text-4xl mt-8">Forum</div>
+    </div>
+    <!--end Forum line-->
+
+    <div class="flex">
+        <div class="w-1/4 pr-6">
+            <input type="text" class="text-sm text-grey-dark p-3 border-grey-light border-2 rounded w-full"
+                   placeholder="Search for threads...">
+        </div>
+
+        <div class="w-3/4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, corporis.</div>
+    </div>
+</div>
 
 
-  </div>
-  <div>
-    
-  </div>
-</header>
-
-
-
-    <!--DO NOT DELETE-->
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<!--DO NOT DELETE-->
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
 </html>
 
 

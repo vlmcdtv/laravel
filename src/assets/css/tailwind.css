@@ -21,15 +21,22 @@
     @apply .text-black;
 }
 
+.button-menu {
+    @apply .bg-white .border-solid .border .border-grey-lighter .text-left .text-sm .text-grey-darkest .w-full .p-3;
+}
 
+.button-menu:hover {
+    text-decoration: none;
+    @apply .bg-grey-lightest;
+}
 
 a {
+    text-decoration: none;
     @apply .text-teal-laravel
 }
 a:hover {
     text-decoration: underline;
 }
-
 
 
         /**
